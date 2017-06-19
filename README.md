@@ -8,6 +8,18 @@ Install the plugin with npm:
 $ npm install html-webpack-plugin-template-vars --save-dev
 ```
 
+```js
+const webpackPlugins = [
+  new HtmlWebpackPlugin({
+    template: 'index.ejs',
+    templateVariables: {
+        hello: 'world',
+        foo: 'baz',
+    }
+  }),
+];
+```
+
 # License
 
 This project is licensed under [MIT](https://github.com/jantimon/html-webpack-plugin/blob/master/LICENSE).
