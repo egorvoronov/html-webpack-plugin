@@ -261,7 +261,7 @@ HtmlWebpackPlugin.prototype.executeTemplate = function (templateFunction, chunks
       };
       if (self.options.templateVariables) {
         var templateVars = Object.keys(self.options.templateVariables);
-        for(var i = 0; i < templateVars.length; i++) {
+        for (var i = 0; i < templateVars.length; i++) {
           var templateVar = templateVars[i];
           templateParams[templateVar] = self.options.templateVariables[templateVar];
         }
